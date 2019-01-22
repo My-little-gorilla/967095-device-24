@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Ульяна Фомина](https://up.htmlacademy.ru/htmlcss/24/user/967095).
-* Наставник: [Александр Уразаев] (https://htmlacademy.ru/profile/urazaev).
+* Наставник: [Александр Уразаев](https://htmlacademy.ru/profile/urazaev).
 
 ---
 
