@@ -13,13 +13,22 @@
      </a>
      <nav class="header_navigaton">
        <ul class="header_navigation_small_literal">
-         <li class="search_small_litetal">поиск по сайту</li>
+         <label for="search" class="visually_hidden">поиск по сайту</label>
+         <input type="search" id="search" placeholder="поиск по сайту">
          <li><a href="#">Валентин Петухов <span>Выйти</span></a></li>
          <li><a href="#">Сравнить</a></li>
          <li><a href="#">Корзина</a></li>
        </ul>
        <ul class="header_navigaton_catalog">
          <li><a href="catalog.html">Каталог товаров</a></li>
+         <ul class="hidden">
+           <li class="item_left"><a href="#">Виртуальная реальность</a></li>
+           <li class="item_left"><a href="#">Моноподы для селфи</a></li>
+           <li class="item_left"><a href="#">Экшн-камеры</a></li>
+           <li class="item_center"><a href="#">Фитнес-браслеты</a></li>
+           <li class="item_center"><a href="#">Умные часы</a></li>
+           <li class="item_right"><a href="#">Квадрокоптеры</a></li>
+         </ul>
        </ul>
        <ul class="header_navigaton_bolt_literal">
          <li><a href="#">Доставка</a></li>
@@ -41,13 +50,29 @@
 <!-- Меню отмеченное красным -->
 
     <section class="filter">
+       <form class="" action="#" method="post">
+         <!-- <input type="range" min="1" max="10000"> -->
 
+         <fieldset>
+           <legend>Цвет</legend>
+           <ul>
+             <li class="filter_option"><input type="checkbox" id="filter_option1"><label for="filter_option1">Черный</label></li>
+             <li class="filter_option"><input type="checkbox" id="filter_option2"><label for="filter_option2">Белый</label></li>
+             <li class="filter_option"><input type="checkbox" id="filter_option3"><label for="filter_option3">Синий</label></li>
+             <li class="filter_option"><input type="checkbox" id="filter_option4"><label for="filter_option4">Красный</label></li>
+             <li class="filter_option"><input type="checkbox" id="filter_option5"><label for="filter_option5">Розовый</label></li>
+           </ul>
+         </fieldset>
+         <fieldset>
+           <legend>Bluetooth</legend>
+           <ul>
+             <li class="groupe_item"><input type="radio" name="product" id="product_group1"><label for="product_group1">Есть</label></li>
+             <li class="groupe_item"><input type="radio" name="product" id="product_group2"><label for="product_group2">Нет</label></li>
+           </ul>
+         </fieldset>
+         <button type="submit" name="button">Показать</button>
 
-      <!-- <div class="worth"></div> -->
-
-      <!-- <form class="" action="index.html" method="post"> -->
-        <!--  -->
-      <!-- </form> -->
+       </form>
 
 
       </section>
@@ -84,7 +109,7 @@
             <h3 class="visual_hidden">Селфи-палка «Следуй за мной»</h3>
             <a href="#">
               <p>
-                <img src="img/stick4.jpg" alt="Селфи-палка «Следуй за мной»" width="360px" height="380px">
+                <img src="img/stick4.jpg" alt="Селфи-палка «Следуй за мной» в виде руки, за которую можно держаться" width="360px" height="380px">
               </p>
                 <p>Селфи-палка «Следуй за мной»<span>4 900 руб.</span></p>
               </a>

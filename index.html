@@ -7,11 +7,14 @@
   <body>
     <header class="mail_header">
       <a>
-         <img src="img/svg-device/logo-device.svg" alt="device" width="163px" height="35px">
+         <img src="img/svg-device/logo-device.svg" alt="логотип_device" width="163px" height="35px">
        </a>
        <nav class="header_navigaton">
          <ul class="header_navigation_small_literal">
-           <li class="search_small_litetal">поиск по сайту</li>
+           <li class="search_small_litetal">
+             <label for="search" class="visually_hidden">поиск по сайту</label>
+             <input type="search" id="search" placeholder="поиск по сайту">
+           </li>
            <li class="enter"><a href="#">Войти</a></li>
            <li><a href="#">Сравнить</a></li>
            <li><a href="#">Корзина</a></li>
@@ -58,7 +61,7 @@
            Вы можете забрать товар сами, заехав в наш офис.
            Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
          </p>
-         <a href="#" class="map"><img src="img/map.jpg" alt="Карта" width="560px" height="222px"></a>
+         <a href="#" class="map"><img src="img/map.jpg" alt="Карта Москва, ул. Строителей, 15" width="560px" height="222px"></a>
          <span class="writeUs yellow">
            <a href="">Напишите нам</a>
          </span>
@@ -68,7 +71,7 @@
      </main>
      <footer>
        <div>
-         <img  class="yellow" src="img/svg-device/logo-device.svg" alt="device" width="163px" height="35px">
+         <img  class="yellow" src="img/svg-device/logo-device.svg" alt="логотип_device" width="163px" height="35px">
          <p>г. Москва, ул. Строителей, 15</p>
        </div>
        <div class="social_nav">
@@ -77,7 +80,7 @@
               <li><a href="#">Гарантия</a></li>
               <li><a href="#">Контакты</a></li>
            </ul>
-           <ul class="cosial">
+           <ul class="social">
              <li><a href="#">facebook</a></li>
              <li><a href="#">instagram</a></li>
              <li><a href="#">twitter</a></li>
@@ -93,5 +96,39 @@
          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="academy.png" alt="developed by HTMLAcademy"></a>
        </div>
      </footer>
+
+
+     <!-- Модальное окно. Отправить письмо -->
+     <section class="modal modal_login">
+       <h2 class="visually_hidden">Напишите нам</h2>
+       <form class="" action="index.html" method="get">
+          <button type="button" name="button" class="modal_close">Закрыть</button>
+          <p>
+           <label for="user_login" class="visually_hidden">Имя Фамилия</label>
+           <input id="user_login" class="visually_hidden" type="text" placeholder="Имя Фамилия" name="Login" class="login_name">
+         </p>
+         <p>
+           <label for="user_password" class="visually_hidden">Ваш пароль</label>
+           <input id="user_password" type="password" class="Login_password" placeholder="Ваш пароль">
+         </p>
+       <label for="message">Текст письма</label>
+       <textarea id="message"name="message" rows="8" cols="80" placeholder="В свободной форме"></textarea>
+         <button type="button" name="button">Отправить</button>
+       </form>
+     </section>
+
+
+
+     <!-- Модальное окно. Карта -->
+
+<section class="modal modal_map">
+  <h2 class="visually_hidden">Как до нас добраться</h2>
+  <button type="button" class="modal_close">Закрыть карту</button>
+  <p>
+    <img src="img/map-big.jpg" alt="Карта Москва, ул. Строителей, 15" width=960px height="559px">
+  </p>
+</section>
+
+
   </body>
 </html>
