@@ -2,10 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-    <header class="mail_header">
+    <header class="main_header">
       <a>
          <img src="img/svg-device/logo-device.svg" alt="логотип_device" width="163px" height="35px">
        </a>
@@ -13,8 +15,8 @@
          <ul class="header_navigation_small_literal">
            <li class="search_small_litetal">
              <form class="search_form" action="https://echo.htmlacademy.ru" method="post">
-               <label for="search" class="visually_hidden">поиск по сайту</label>
-               <input type="search" id="search" placeholder="поиск по сайту">
+               <label for="search" class="visually">Поиск по сайту</label>
+               <input type="search" id="search">
              </form>
            </li>
            <li class="enter"><a href="#">Войти</a></li>
@@ -38,6 +40,7 @@
        <!-- Зона помеченная красным -->
 
      <section class="company_description">
+       <div class="company_description_container">
        <section class="about">
          <h2>О нас</h2>
          <p>
@@ -68,12 +71,13 @@
            <a href="">Напишите нам</a>
          </span>
        </section>
+     </div>
      </section>
 
      </main>
      <footer>
-       <div>
-         <img  class="yellow" src="img/svg-device/logo-device.svg" alt="логотип_device" width="163px" height="35px">
+       <div class="yellow_logo">
+         <img  src="img/svg-device/logo-device.svg" alt="логотип_device" width="163px" height="35px">
          <p>г. Москва, ул. Строителей, 15</p>
        </div>
        <div class="social_nav">
