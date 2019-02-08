@@ -1,9 +1,37 @@
 
+@font-face {
+    font-family: 'gilroylight';
+    src: url('../fonts/gilroylight-webfont.woff2') format('woff2'),
+         url('../fonts/gilroylight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gilroyextrabold';
+    src: url('../fonts/gilroyextrabold-webfont.woff2') format('woff2'),
+         url('../fonts/gilroyextrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('/..fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 body{
   background-color: #ffffff;
-  font-family:"gilroyextrabold", Arial, sans-serif;
+  font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -37,7 +65,7 @@ a{
 }
 
 .search_small_litetal label{
-  font-family: "open_sanslight";
+  font-family: "open_sansregular";
   opacity: 0.3;
   color: #000000;
   font-weight: 300;
@@ -45,12 +73,17 @@ a{
   letter-spacing: 0.15px;
 }
 
-.search_small_litetal label:hover{
+/* .search_small_litetal label:hover{
   opacity: 0.6;
+  } */
+
+  .search_small_litetal input[placeholder]:hover{
+    opacity: 0.6;
   }
 
-  .search_small_litetal input:focus{
+  .search_small_litetal input[placeholder]:focus{
     border-bottom: 3px solid #000000;
+    opacity: 1.0;
   }
 
 .search_small_litetal input{
@@ -59,6 +92,7 @@ a{
   background-color: transparent;
   border: none;
   font-size: 15px;
+  opacity: 0.3;
 }
 
 .main_header img:hover,
@@ -398,33 +432,4 @@ legend{
 
 .header_navigation_small_literal span{
   opacity: 0.3;
-}
-
-@font-face {
-    font-family: 'gilroylight';
-    src: url('../fonts/gilroylight-webfont.woff2') format('woff2'),
-         url('../fonts/gilroylight-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'gilroyextrabold';
-    src: url('../fonts/gilroyextrabold-webfont.woff2') format('woff2'),
-         url('../fonts/gilroyextrabold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'open_sanslight';
-    src: url('../fonts/opensans-light-webfont.woff2') format('woff2'),
-         url('../fonts/opensans-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'open_sansregular';
-    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
-         url('/..fonts/opensans-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 }
