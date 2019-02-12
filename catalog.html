@@ -12,10 +12,11 @@
 <body class="inner_page">
   <header class="mail_header">
     <div class="container">
+
+    <nav class="header_navigaton">
       <a href="index.html" class="header_logo">
         <img src="img/svg-device/logo-device.svg" alt="device" width="163px" height="35px">
        </a>
-    <nav class="header_navigaton">
        <ul class="header_navigation_small_literal">
           <li class="search_small_litetal">
             <form class="search_form" action="https://echo.htmlacademy.ru" method="post">
@@ -60,7 +61,7 @@
    </header>
   <main>
     <div class="container">
-    <h2>Моноподы для селфи</h2>
+    <h2 class="monopods">Моноподы для селфи</h2>
     <div class="main_navigation">
       <ul class="main_navigation_list">
         <li><a href="index.html">Главная</a></li>
@@ -70,7 +71,9 @@
     </div>
     </div>
 <!-- Меню отмеченное красным -->
-<div class="catalog_wrapper container">
+<div class="catalog_wrapper">
+  <div class="container">
+    <div class="container_columns">
     <section class="filter">
        <form class="filter_options" action="https://echo.htmlacademy.ru" method="post">
          <!-- <input type="range" min="1" max="10000"> -->
@@ -85,7 +88,7 @@
              <li class="filter_option"><input type="checkbox" id="filter_option5"><label for="filter_option5">Розовый</label></li>
            </ul>
          </fieldset>
-         <fieldset class="Bluetooth">
+         <fieldset class="bluetooth">
            <legend>Bluetooth</legend>
            <ul class="checkbox_filter">
              <li class="groupe_item"><input type="radio" name="product" id="product_group1"><label for="product_group1">Есть</label></li>
@@ -142,6 +145,8 @@
 
 
       </section>
+    </div>
+    </div>
     </div>
   </main>
   <footer>
