@@ -51,6 +51,23 @@ a{
   margin: -1px;
 }
 
+.container{
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.mail_header{
+  margin: 0;
+  padding: 0;
+}
+
+.header_logo{
+  width: 163px;
+  height: 35px;
+  position: absolute;
+
+}
+
 
 /* header */
 
@@ -58,10 +75,85 @@ a{
 .header_navigaton{
   background-color: #f8e296;
   color: #000000;
+  padding-left: 60px;
+  padding-right: 61px;
+  padding-top: 42px;
+  margin-top: 40px;
+  height: 258px;
 }
+
+.inner_page .header_navigaton{
+  padding-bottom: 53px;
+}
+
+.hidden{
+  display: flex;
+  justify-content: space-between;
+  width: 555px;
+  margin-top: 53px;
+}
+
 
 .header_navigaton ul{
   list-style: none;
+  padding: 0;
+
+}
+
+.header_navigation_small_literal{
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 36px;
+}
+
+.right_side_small{
+  width: 500px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.right_side_small_catalog{
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+ .inner_page .catalog_bolt_list{
+  display: flex;
+  justify-content: space-between;
+  margin-top: -14px;
+}
+.inner_page .header_navigaton_bolt_literal{
+  width: 500px;
+}
+
+.right_side_small li:nth-child(3){
+  margin-left: 40px;
+}
+.enter{
+  margin-right: auto;
+}
+
+.right_side_bolt{
+  width: 500px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header_navigaton_bolt_literal{
+  display: flex;
+  margin-bottom: 169px;
+  justify-content: space-between;
+}
+
+.right_side_bolt_contacts{
+  margin-left: auto;
+}
+
+.right_side_bolt li:nth-child(1){
+  margin-right: 39px;
 }
 
 .search_small_litetal label{
@@ -137,6 +229,7 @@ a{
   text-transform: uppercase;
   letter-spacing: 3.6px;
   color: #000000;
+
 }
 
 /* header end */
@@ -145,8 +238,94 @@ a{
 
 /* company_description */
 
+
+/* catalog */
+  .main_navigation_list{
+  display: flex;
+  justify-content: space-between;
+  width: 381px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 55px;
+  }
+
+  .inner_page main h2{
+    margin-bottom: 22px;
+  }
+
+  .catalog_wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+  .filter{
+    width: 200px;
+  }
+
+  .color{
+    margin-bottom: 17px;
+  }
+  .Bluetooth{
+    margin-bottom: 13px;
+  }
+
+  .product{
+    width: 761px;
+  }
+
+  .product_items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 761px;
+}
+
+
+  .product_items{
+    margin: 0;
+    padding: 0;
+  }
+
+  .inner_page .footer_navigation_small_literal{
+    width: 451px;
+  }
+/* catalog */
 .company_description{
   background-color: #ffffff;
+}
+
+.company_description_container{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 87px;
+}
+
+.company_description_container h2{
+  padding: 0;
+  margin-bottom: 42px;
+}
+
+.about{
+  width: 462px;
+  padding: 0;
+}
+
+.about .first_paragraph{
+  margin-bottom: 30px;
+}
+
+.about p{
+    margin: 0;
+    /* margin-top: -29px; */
+    margin-bottom: 37px;
+}
+
+.contacts{
+  width: 560px;
+  padding: 0;
+}
+
+.contacts p{
+  margin-bottom: 40px;
 }
 
 .company_description h2{
@@ -156,6 +335,10 @@ a{
   font-weight: 400;
   line-height: 48px;
   letter-spacing: 0.21px;
+}
+
+.contacts .map img{
+  margin-bottom: 65px;
 }
 
 .company_description p{
@@ -171,6 +354,9 @@ a{
   font-size: 16px;
   font-weight: 400;
   line-height: 40px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 60px;
 }
 
 .yellow{
@@ -197,6 +383,7 @@ a{
 footer{
   background-color: #464646;
   color: #ffffff;;
+  height: 323px;
 }
 
 footer a{
@@ -211,9 +398,39 @@ footer p{
   line-height: 30px;
 }
 
+
+
 .navigation_items{
-  text-align: center;
+  display: flex;
+  width: 440px;
+  justify-content: space-between;
+  margin-top: 135px;
 }
+
+.social{
+display: flex;
+justify-content: space-between;
+width: 161px;
+margin-top: 60px;
+}
+.footer_navigation{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 251px;
+}
+
+.footer_navigation p{
+  margin-top: -20px;
+}
+.footer_navigation_small_literal{
+  display: flex;
+  justify-content: space-between;
+  width: 328px;
+  margin-top: 63px;
+}
+
 
 .navigation_items a{
   font-family: "gilroyextrabold";
@@ -259,7 +476,14 @@ footer p{
 
 .yellow_logo img{
 color: #ffc600;
+margin-top: 65px;
 }
+
+.footer_wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
 
 .yellow_logo img:hover,
 .yellow_logo img:focus{
@@ -425,6 +649,8 @@ legend{
   line-height: 24px;
   letter-spacing: 0.16px;
 }
+
+
 
 .footer_navigation_small_literal span{
   opacity: 0.3;

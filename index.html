@@ -8,30 +8,39 @@
   </head>
   <body>
     <header class="main_header">
-      <a>
-         <img src="img/svg-device/logo-device.svg" alt="логотип_device" width="163px" height="35px">
-       </a>
-       <nav class="header_navigaton">
-         <ul class="header_navigation_small_literal">
-           <li class="search_small_litetal">
-             <form class="search_form" action="https://echo.htmlacademy.ru" method="post">
-               <label for="search" class="visually_hidden">Поиск по сайту</label>
-               <input type="search" id="search"  placeholder="Поиск по сайту">
-             </form>
-           </li>
-           <li class="enter"><a href="#">Войти</a></li>
-           <li><a href="#">Сравнить</a></li>
-           <li><a href="#">Корзина</a></li>
-         </ul>
-         <ul class="header_navigaton_catalog">
-           <li><a href="catalog.html">Каталог товаров</a></li>
-         </ul>
-         <ul class="header_navigaton_bolt_literal">
-           <li><a href="#">Доставка</a></li>
-           <li><a href="#">Гарантия</a></li>
-           <li><a href="#">Контакты</a></li>
-         </ul>
-       </nav>
+
+      <div class="container">
+        <a>
+           <img  class="header_logo" src="img/svg-device/logo-device.svg" alt="логотип_device" width="163px" height="35px">
+         </a>
+         <nav class="header_navigaton">
+           <ul class="header_navigation_small_literal">
+             <li class="search_small_litetal">
+               <form class="search_form" action="https://echo.htmlacademy.ru" method="post">
+                 <label for="search" class="visually_hidden">Поиск по сайту</label>
+                 <input type="search" id="search"  placeholder="Поиск по сайту">
+               </form>
+             </li>
+          <div class="right_side_small">
+              <li class="enter"><a href="#">Войти</a></li>
+             <li><a href="#">Сравнить</a></li>
+             <li><a href="#">Корзина</a></li>
+          </div>
+           </ul>
+           <!-- <ul class="header_navigaton_catalog"> -->
+           <!-- </ul> -->
+           <div class="check">
+           <ul class="header_navigaton_bolt_literal">
+             <li class="catalog_item"><a href="catalog.html">Каталог товаров</a></li>
+          <div class="right_side_bolt">
+             <li><a href="#">Доставка</a></li>
+             <li><a href="#">Гарантия</a></li>
+             <li class="right_side_bolt_contacts"><a href="#">Контакты</a></li>
+          </div>
+           </ul>
+           </div>
+         </nav>
+       </div>
      </header>
      <main>
 
@@ -40,10 +49,10 @@
        <!-- Зона помеченная красным -->
 
      <section class="company_description">
-       <div class="company_description_container">
+       <div class="company_description_container container">
        <section class="about">
          <h2>О нас</h2>
-         <p>
+         <p class="first_paragraph">
             Огромный выбор гаджетов не оставит равнодушным гика,
             который есть в каждом из нас.
           </p>
@@ -76,6 +85,7 @@
 
      </main>
      <footer>
+      <div class="container footer_wrapper">
        <div class="yellow_logo">
          <img  src="img/svg-device/logo-device.svg" alt="логотип_device" width="163px" height="35px">
          <p>г. Москва, ул. Строителей, 15</p>
@@ -101,6 +111,7 @@
          <p>Тел.: +7 (495) 495-95-95</p>
          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="academy.png" alt="developed by HTMLAcademy"></a>
        </div>
+      </div>
      </footer>
 
 

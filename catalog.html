@@ -9,12 +9,13 @@
 
   <title>Каталог</title>
 </head>
-<body>
+<body class="inner_page">
   <header class="mail_header">
-    <a href="index.html">
-      <img src="img/svg-device/logo-device.svg" alt="device" width="163px" height="35px">
-     </a>
-     <nav class="header_navigaton">
+    <div class="container">
+      <a href="index.html" class="header_logo">
+        <img src="img/svg-device/logo-device.svg" alt="device" width="163px" height="35px">
+       </a>
+    <nav class="header_navigaton">
        <ul class="header_navigation_small_literal">
           <li class="search_small_litetal">
             <form class="search_form" action="https://echo.htmlacademy.ru" method="post">
@@ -22,20 +23,29 @@
               <input type="search" id="search"  placeholder="Поиск по сайту">
             </form>
           </li>
+          <div class="right_side_small_catalog">
          <li><a href="#">Валентин Петухов <span>Выйти</span></a></li>
          <li><a href="#">Сравнить</a></li>
          <li><a href="#">Корзина</a></li>
+         </div>
        </ul>
+       <div class="catalog_bolt_list">
        <ul class="header_navigaton_catalog">
          <li>
-           <a href="catalog.html">Каталог товаров</a>
+           <a href="catalog.html" class="catalog_menu">Каталог товаров</a>
            <ul class="hidden">
-             <li class="item_left"><a href="#">Виртуальная реальность</a></li>
-             <li class="item_left"><a href="#">Моноподы для селфи</a></li>
-             <li class="item_left"><a href="#">Экшн-камеры</a></li>
-             <li class="item_center"><a href="#">Фитнес-браслеты</a></li>
-             <li class="item_center"><a href="#">Умные часы</a></li>
-             <li class="item_right"><a href="#">Квадрокоптеры</a></li>
+             <div class="item_left">
+               <li class="item_left"><a href="#">Виртуальная реальность</a></li>
+               <li class="item_left"><a href="#">Моноподы для селфи</a></li>
+               <li class="item_left"><a href="#">Экшн-камеры</a></li>
+             </div>
+             <div class="item_center">
+               <li class="item_center"><a href="#">Фитнес-браслеты</a></li>
+               <li class="item_center"><a href="#">Умные часы</a></li>
+             </div>
+             <div class="item_right">
+               <li class="item_right"><a href="#">Квадрокоптеры</a></li>
+             </div>
            </ul>
          </li>
        </ul>
@@ -44,25 +54,28 @@
          <li><a href="#">Гарантия</a></li>
          <li><a href="#">Контакты</a></li>
        </ul>
+       </div>
      </nav>
+     </div>
    </header>
   <main>
+    <div class="container">
     <h2>Моноподы для селфи</h2>
     <div class="main_navigation">
-      <ul>
+      <ul class="main_navigation_list">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Каталог товаров</a></li>
         <li>Моноподы для селфи</li>
       </ul>
     </div>
-
+    </div>
 <!-- Меню отмеченное красным -->
-
+<div class="catalog_wrapper container">
     <section class="filter">
        <form class="filter_options" action="https://echo.htmlacademy.ru" method="post">
          <!-- <input type="range" min="1" max="10000"> -->
 
-         <fieldset>
+         <fieldset class="color">
            <legend>Цвет</legend>
            <ul class="checkbox_filter">
              <li class="filter_option"><input type="checkbox" id="filter_option1"><label for="filter_option1">Черный</label></li>
@@ -72,7 +85,7 @@
              <li class="filter_option"><input type="checkbox" id="filter_option5"><label for="filter_option5">Розовый</label></li>
            </ul>
          </fieldset>
-         <fieldset>
+         <fieldset class="Bluetooth">
            <legend>Bluetooth</legend>
            <ul class="checkbox_filter">
              <li class="groupe_item"><input type="radio" name="product" id="product_group1"><label for="product_group1">Есть</label></li>
@@ -129,9 +142,11 @@
 
 
       </section>
+    </div>
   </main>
   <footer>
-    <div>
+    <div class="container footer_wrapper">
+    <div class="yellow_logo">
       <img class="yellow" src="img/svg-device/logo-device.svg" alt="device" width="163px" height="35px">
       <p>г. Москва, ул. Строителей, 15</p>
     </div>
@@ -156,6 +171,7 @@
       <p>Тел.: +7 (495) 495-95-95</p>
       <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="academy.png" alt="developed by HTMLAcademy"></a>
     </div>
+  </div>
   </footer>
 </body>
 </html>
