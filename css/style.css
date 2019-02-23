@@ -43,13 +43,25 @@ a{
   text-decoration: none;
 }
 
-.visually_hidden{
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
+.visually_hidden,
+  .visually_hidden:not(:focus):not(:active),
+  input[type=checkbox].visually-hidden,
+  input[type=radio].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 
 .container{
   width: 1160px;
@@ -285,8 +297,14 @@ display: none;
 }
 
 .inner_page .hidden_wrapper{
-  position: relative;
+  position: absolute;
+  width: 1160px;
+  left: -59px;
+  top: 20px;
   background-color: #f8e296;
+  padding-left: 60px;
+  padding-bottom: 60px;
+  box-sizing: border-box;
 }
 
 
@@ -306,25 +324,25 @@ display: none;
   left: 37px;
 }
 
-/* .search_small_litetal input[placeholder]:focus .active_button{
-  display: block;
-} */
-
-  /* .active_button{
-    display: none;
-  } */
-
   .search_button{
   position: absolute;
+  visibility: hidden;
   top: -12px;
   left: 318px;
-  display: inline-block;
   background-color: transparent;
   border: 2px solid #000000;
   border-bottom: none;
   padding: 16px 18px;
   font-family: "open_sansregular";
 }
+
+
+ .search_button_field:active ~ .search_button,
+ .search_button_field:focus ~ .search_button{
+ visibility: visible;
+}
+
+
 
 .search_button:hover,
 .search_button:focus{
@@ -353,6 +371,7 @@ display: none;
   } */
 .search_small_litetal input[placeholder]{
   padding: 10px;
+  padding-right: 100px;
 }
   .search_small_litetal input[placeholder]:hover{
     opacity: 0.6;
@@ -497,36 +516,47 @@ display: none;
     padding-left: 57px;
   }
 
+
+
+
+
+
+  /* .класс_инпута + лейбл::псевдоэлемент {}
+  .класс_инпута:hover + лейбл::псевдоэлемент {} */
+
+
+
+
+
   .filter_checkbox{
     position: relative;
     cursor: pointer;
     padding-left: 40px;
   }
 
+.checkbox_condition + label::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  background-image: url("/img/svg-device/checkbox-off.svg");
+}
 
+.checkbox_condition:disabled + label{
+  opacity: 0.6;
+}
 
-  .filter_checkbox input[type="checkbox"] + .checkbox_indicator{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 23px;
-    height: 23px;
-    background-image: url("/img/svg-device/checkbox-off.svg");
-  }
-  .filter_checkbox input[type="checkbox"]:disabled + .checkbox_indicator,
-  .filter_checkbox input[type="checkbox"]:disabled {
-    opacity: 0.6;
-  }
-
-  .filter_checkbox input[type="checkbox"]:checked + .checkbox_indicator::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 25px;
-    height: 23px;
-    background-image: url("/img/svg-device/checkbox-on.svg");
-  }
+.checkbox_condition:checked + label::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 23px;
+  background-image: url("/img/svg-device/checkbox-on.svg");
+}
 
 .checkbox_filter{
     margin: 0;
@@ -790,9 +820,9 @@ display: none;
   -webkit-transform: scaleY(4);
       -ms-transform: scaleY(4);
           transform: scaleY(4);
-  -webkit-transition-duration: 1s;
-       -o-transition-duration: 1s;
-          transition-duration: 1s;
+  -webkit-transition-duration: 0.4s;
+       -o-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 .detail:active a,
 .writeUs:active a{
@@ -1111,10 +1141,12 @@ legend{
 
 .product_items img{
   background-color: #eeeeee;
-  position: relative;
 }
 
+.product_items li {
+  position: relative;
 
+}
 
 .product_items a:hover .product_buttons_wrapper
 {
@@ -1377,9 +1409,9 @@ background-color: #f0c52e;
   -webkit-transform: scaleY(4);
       -ms-transform: scaleY(4);
           transform: scaleY(4);
-  -webkit-transition-duration: 1s;
-       -o-transition-duration: 1s;
-          transition-duration: 1s;
+  -webkit-transition-duration: 0.4s;
+       -o-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 
 .line_button:active{
@@ -1391,9 +1423,9 @@ outline: none;
 .line_button:active::after{
   padding-left: 136px;
   background-color: #000000;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
 }
 
 

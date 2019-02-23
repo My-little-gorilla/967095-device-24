@@ -21,7 +21,8 @@
           <li class="search_small_litetal">
             <form class="search_form" action="https://echo.htmlacademy.ru" method="post">
               <label for="search" class="visually_hidden">Поиск по сайту</label>
-              <input type="search" id="search"  placeholder="Поиск по сайту">
+              <input type="search" id="search" class="search_button_field" placeholder="Поиск по сайту">
+              <button class="search_button" type="submit" name="button">Найти</button>
             </form>
           </li>
           <div class="right_side_small_catalog">
@@ -85,33 +86,29 @@
            <legend>Цвет</legend>
            <ul class="checkbox_filter">
              <li class="filter_option">
-               <label class="filter_checkbox" for="filter_option1">
-                 <input type="checkbox" class="visually_hidden" id="filter_option1">
-                 <span class="checkbox_indicator"></span> Черный
+               <input type="checkbox" class="visually_hidden checkbox_condition" id="filter_option1">
+               <label class="filter_checkbox" for="filter_option1">Черный
                </label>
              </li>
              <li class="filter_option">
-               <label class="filter_checkbox" for="filter_option2">
-                 <input type="checkbox" class="visually_hidden" id="filter_option2">
-                 <span class="checkbox_indicator"></span> Белый
+               <input type="checkbox" class="visually_hidden checkbox_condition" id="filter_option2">
+               <label class="filter_checkbox" for="filter_option2">Белый
                </label>
              </li>
              <li class="filter_option">
-               <label class="filter_checkbox" for="filter_option3">
-                 <input type="checkbox" class="visually_hidden" id="filter_option3">
-                 <span class="checkbox_indicator"></span> Синий
+               <input type="checkbox" class="visually_hidden checkbox_condition" id="filter_option3">
+               <label class="filter_checkbox" for="filter_option3">Синий
                </label>
              </li>
              <li class="filter_option">
-               <label class="filter_checkbox" for="filter_option4">
-                 <input type="checkbox" class="visually_hidden" id="filter_option4">
-                 <span class="checkbox_indicator"></span> Красный
+               <input type="checkbox" class="visually_hidden checkbox_condition" id="filter_option4">
+               <label class="filter_checkbox" for="filter_option4">Красный
                </label>
              </li>
              <li class="filter_option">
-               <label class="filter_checkbox" for="filter_option5">
-                 <input type="checkbox" class="visually_hidden" id="filter_option5" disabled>
-                 <span class="checkbox_indicator"></span> Розовый
+               <input type="checkbox" class="visually_hidden checkbox_condition" id="filter_option5" disabled>
+               <label class="filter_checkbox disabled" for="filter_option5">Розовый
+
                </label>
              </li>
            </ul>
@@ -186,6 +183,16 @@
               <p>
                 <img src="img/stick3.jpg" alt="Непотопляемая селфи-палка" width="360px" height="380px">
               </p>
+              <div class="product_buttons_wrapper">
+                <div class="hidden_product_buttons">
+                  <button type="button" name="cart" class="detail cart_button">
+                    В корзину
+                  </button>
+                  <button class="comparison" type="button">
+                    Добавить к сравнению
+                  </button>
+                </div>
+              </div>
                 <p>Непотопляемая селфи-палка<span>2 500 руб.</span></p>
               </a>
           </li>
@@ -195,7 +202,16 @@
               <p>
                 <img src="img/stick4.jpg" alt="Селфи-палка «Следуй за мной» в виде руки, за которую можно держаться" width="360px" height="380px">
               </p>
-
+              <div class="product_buttons_wrapper">
+                <div class="hidden_product_buttons">
+                  <button type="button" name="cart" class="detail cart_button">
+                    В корзину
+                  </button>
+                  <button class="comparison" type="button">
+                    Добавить к сравнению
+                  </button>
+                </div>
+              </div>
                 <p>Селфи-палка «Следуй за мной»<span>4 900 руб.</span></p>
               </a>
           </li>
