@@ -41,7 +41,7 @@
                <ul class="hidden">
                  <div class="item_left">
                    <li class="item_left"><a href="#">Виртуальная реальность</a></li>
-                   <li class="item_left"><a href="#">Моноподы для селфи</a></li>
+                   <li class="item_left"><a href="catalog.html">Моноподы для селфи</a></li>
                    <li class="item_left"><a href="#">Экшн-камеры</a></li>
                  </div>
                  <div class="item_center">
@@ -64,11 +64,147 @@
          </nav>
        </div>
      </header>
+
+
+
+
+
+
+
      <main>
 
 
 
        <!-- Зона помеченная красным -->
+       <!-- slaider -->
+
+
+
+       <section class="slaider">
+           <h2 class="visually_hidden">Избранные продукты</h2>
+           <ul class="slaider_radio_list">
+
+            <input id="promo_1" class="promo_radio" type="radio" name="toggle" value="1"checked >
+           <label for="promo_1" class="promo_indicator promo_1_indicator"> </label>
+             <input id="promo_2" class="promo_radio" type="radio" name="toggle" value="2" >
+           <label for="promo_2" class="promo_indicator promo_2_indicator"> </label>
+           <input id="promo_3" class="promo_radio" type="radio" name="toggle" value="3" >
+           <label for="promo_3" class="promo_indicator promo_3_indicator"> </label>
+
+             <ol class="promo_description">
+             <li class="promo_description_item1 ">
+               <img class="slide_img slide_img1" src="img/slider-1.png.png" id="img_1" alt="селфи палка" width="384px" height="486px">
+               <p class="slade_name">Делай селфи, как Бен Стиллер!</p>
+               <p class="slade_description">Самая длинная палка для селфи доступна в нашем магазине.
+                  Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                  <a href="#" class="detail">Подробнее</a>
+                  <table class="slaider_table">
+                    <tr>
+                    <td class="table_value">8,5 м</td>
+                    <td class="table_value">5 кг</td>
+                    <td class="table_value">Карбон</td>
+                    </tr>
+                    <tr>
+                      <td class="table_value">Длина палки</td>
+                      <td class="table_value">Вес палки</td>
+                      <td class="table_value">Материал</td>
+                    </tr>
+                  </table>
+       </li>
+       <li class="promo_description_item2 ">
+         <img class="slide_img slide_img2" src="img/slider-2.png.png" id="img_2" alt="селфи палка" width="384px" height="486px">
+         <p class="slade_name">Худеем правильно!</p>
+         <p class="slade_description">Мотивирующие фитнес-браслеты помогут
+            найти в себе силы не пропускать занятия и соблюдать диету.</p>
+            <a href="#" class="detail">Подробнее</a>
+            <table class="slaider_table">
+              <tr>
+              <td class="table_value">48 часов</td>
+              </tr>
+              <tr>
+                <td class="table_value">Без подзарядки</td>
+              </tr>
+            </table>
+       </li>
+       <li class="promo_description_item3 ">
+         <img class="slide_img slide_img3" src="img/slider-3.png.png" id="img_3" alt="селфи палка" width="526px" height="334px">
+         <p class="slade_name">Порхает как бабочка, жалит как пчела!</p>
+         <p class="slade_description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+            замаскированным под стандартную камеру.</p>
+            <a href="#" class="detail">Подробнее</a>
+            <table class="slaider_table">
+              <tr>
+              <td class="table_value">800 м</td>
+              <td>50 м</td>
+              </tr>
+              <tr>
+                <td class="table_value">Дальность полета</td>
+                <td class="table_value">Радиус поражения</td>
+
+              </tr>
+            </table>
+       </li>
+       </ol>
+     </ul>
+       </section>
+
+       <section class="popular">
+         <div class="container">
+         <ul class="popular_list">
+           <li class="popular_list_item1"><a href="#"><span class="popular_name">Виртуальная реальность</span></a></li>
+           <li class="popular_list_item2"><a href="#"><span class="popular_name">Моноподы для селфи</span></a></li>
+           <li class="popular_list_item3"><a href="#"><span class="popular_name">Экшн-камеры</span></a></li>
+           <li class="popular_list_item4"><a href="#"><span class="popular_name">Фитнес-браслеты</span></a></li>
+           <li class="popular_list_item5"><a href="#"><span class="popular_name">Умные часы</span></a></li>
+           <li class="popular_list_item6"><a href="#"><span class="popular_name">Квадрокоптеры</span></a></li>
+         </ul>
+       </div>
+
+       </section>
+
+       <section class="service">
+         <h2 class="visually_hidden">услуги</h2>
+        <div class="container service_wrapper">
+       <input type="radio" class="service_radio visually_hidden" name="triggered" id="service_radio1" checked>
+       <label class="service_indicator1 detail" for="service_radio1">Доставка</label>
+       <input type="radio" class="service_radio visually_hidden" name="triggered" id="service_radio2">
+       <label class="service_indicator2 detail" for="service_radio2">Гарантия</label>
+       <input type="radio" class="service_radio visually_hidden" name="triggered" id="service_radio3">
+       <label class="service_indicator3 detail" for="service_radio3">Кредит</label>
+           <ul class="service_description">
+             <li class="service_item_description service_item_description1">
+               <h3>Доставка</h3>
+               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+                  Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+             </li>
+             <li class="service_item_description service_item_description2">
+               <h3>Гарантия</h3>
+               <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте,
+                  мы выдадим вам новый. Товар, не дом, конечно же.</p>
+             </li>
+             <li class="service_item_description service_item_description3">
+               <h3>Гарантия</h3>
+               <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для
+                  вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+             </li>
+         </ul>
+        </div>
+       </section>
+       <section class="partners">
+         <h4 class="visually_hidden">партнеры</h4>
+         <div class="container">
+         <ul class="partners_list">
+           <li class="partners_item1"><a href="#"><h4 class="visually_hidden">партнер 1</h4></a></li>
+           <li class="partners_item2"><a href="#"><h4 class="visually_hidden">партнер 2</h4></a></li>
+           <li class="partners_item3"><a href="#"><h4 class="visually_hidden">партнер 3</h4></a></li>
+           <li class="partners_item4"><a href="#"><h4 class="visually_hidden">партнер 4</h4></a></li>
+         </ul>
+         </div>
+       </section>
+
+
+
+
 
      <section class="company_description">
        <div class="company_description_container container">
@@ -78,9 +214,8 @@
             Огромный выбор гаджетов не оставит равнодушным гика,
             который есть в каждом из нас.
           </p>
-          <p>
-             Мы можем доставить ваш товар в самые отдаленные точки России!
-             DEVICE работает со многими транспортными компаниями:
+          <p>Мы можем доставить ваш товар в самые отдаленные точки
+России! DEVICE работает со многими транспортными компаниями:
           </p>
           <ul class="transport_company">
             <li>Деловые Линии</li>
@@ -166,8 +301,8 @@
            <input id="user_login" class="" type="text" placeholder="Имя Фамилия" name="login" class="login_name" pattern="[А-Яа-яЁё]">
          </p>
          <p>
-           <label for="user_password" >Ваш пароль</label>
-           <input id="user_password" type="password" class="login_password" placeholder="Ваш пароль" pattern="[0-9]{,3}">
+           <label for="user_password" >Ваш e-mail</label>
+           <input id="user_password" type="email" class="login_password" placeholder="email@example.com" pattern="[0-9]{,3}">
          </p>
         <p>
        <label for="message">Текст письма</label>
