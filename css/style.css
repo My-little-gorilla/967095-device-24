@@ -1100,7 +1100,7 @@ letter-spacing: 0.15px;
 }
 
 
-  .inner_page .footer_navigation_small_literal{}
+
 /* catalog */
 .company_description{
   background-color: #ffffff;
@@ -1394,6 +1394,14 @@ margin-top: 43px;
   margin-top: 60px;
   margin-left: 1px;
 }
+.footer_navigation_small_literal .person_log {
+    position: relative;
+  }
+  .person_name{
+  position: absolute;
+  left: -170px;
+  top: -5px;
+}
 .footer_navigation_small_literal li:last-child{
   margin-right: 1px;
 }
@@ -1577,7 +1585,9 @@ main h2{
   opacity: 0.1;
 }
 
-
+.inner_page footer{
+  padding-top: 3px;
+}
 /* filter */
 
 
@@ -1755,6 +1765,9 @@ legend{
   box-sizing: border-box;
   justify-content: space-between;
   margin-top: 25px;
+  margin-bottom: 3px;
+  word-break:  keep-all
+  ;
 
 }
 .product_items p{
@@ -1782,32 +1795,41 @@ legend{
   justify-content: space-between;
   align-items: center;
   background-color: #ebebeb;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: -12px;
+  margin-bottom: 77px;
+  box-sizing: border-box;
 }
 .catalog_pages > a{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 126px;
-  height: 70px;
   color: #000000;
   font-family: "gilroyextrabold";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
+  letter-spacing: 4.0px;
+  padding: 23px 3px;
+
+}
+.catalog_pages > a:active{
+  background-color: #d8d8d8;
+  color: #979797;
 }
 .catalog_pages > a:hover,
 .catalog_pages > a:focus{
   background-color: #d8d8d8;
 }
-.pages_numbers{
+.pages_numbers {
   list-style: none;
   display: flex;
   justify-content: space-between;
   width: 86px;
-}
+  padding: 0;
+  margin: 0;
+  }
 .pages_numbers a{
   color: #000000;
   font-family: "gilroyextrabold";
@@ -1815,7 +1837,19 @@ legend{
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
+  opacity: 0.3;
+  color: #000000;
+
 }
+.pages_numbers a:hover,
+.pages_numbers a:focus{
+opacity: 0.6;
+color: #000000;
+}
+.pages_numbers a:active{
+  opacity: 1;
+}
+
 
 
 
