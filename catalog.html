@@ -78,9 +78,15 @@
 
     <div class="container_columns">
     <section class="filter">
+      <h3 class="filter_title">Фильтр:</h3>
        <form class="filter_options" action="https://echo.htmlacademy.ru" method="post">
          <hr class="catalog_line">
-         <input type="range" min="1" max="10000">
+         <legend>Стоимость
+        <button class="position" type="button" name="button" id="from"></button>
+        <label class="from_button" for="from">От 0</label>
+        <button class="position" type="button" name="button" id="till"></button>
+        <label class="till_button" for="from">До 5000</label>
+        </legend>
          <hr class="catalog_line">
          <fieldset class="color">
            <legend>Цвет</legend>
@@ -112,7 +118,7 @@
                </label>
              </li>
            </ul>
-           <hr class="catalog_line">
+           <hr class="catalog_line line_bluetooth">
          </fieldset>
          <fieldset class="bluetooth">
            <legend>Bluetooth</legend>
@@ -133,11 +139,16 @@
          </fieldset>
          <button type="submit" name="button" class="detail">Показать</button>
        </form>
-
-
-
       </section>
       <section class="produrt">
+        <ul class="sort">
+          <li class="sort_title">Сортировка:</li>
+          <li><a>По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По популярности</a></li>
+          <li class="sort_direction_up"><a href="#">вверх</a></li>
+          <li class="sort_direction_down"><a href="#">вниз</a></li>
+        </ul>
         <ul class="product_items">
           <li>
             <h3 class="visually_hidden">Любительская селфи-палка</h3>
@@ -235,12 +246,7 @@
           </ul>
           <a href="#">Вперед</a>
         </div>
-
-
-
-
-
-      </section>
+    </section>
     </div>
     </div>
     </div>
