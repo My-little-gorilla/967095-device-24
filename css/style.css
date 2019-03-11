@@ -1632,14 +1632,15 @@ margin-top: 43px;
           justify-content: space-between;
   width: 328px;
   margin-top: 63px;
-  margin-left: 1px;
+  margin-left: -1px;
 }
 .footer_navigation_small_literal .person_log {
     position: relative;
+    left: 24px;
   }
   .person_log .person_name{
   position: absolute;
-  left: -170px;
+  left: -175px;
   top: -5px;
   opacity: 1;
 }
@@ -1647,7 +1648,7 @@ margin-top: 43px;
   margin-right: 1px;
 }
 .footer_navigation_small_literal li:nth-child(2){
-  margin-left: 5px;
+  margin-left: 23px;
 }
 
 .social_nav{
@@ -1950,8 +1951,8 @@ legend{
 }
 
 .hidden_product_buttons .cart_button{
+  display: block;
   background-color: transparent;
-  border: none;
   text-align: center;
   letter-spacing: 3.19px;
   margin: 0;
