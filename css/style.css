@@ -422,7 +422,7 @@ a{
     background-color: #ffffff;
     -webkit-box-shadow: inset 0 0 1px 1px #000000;
             box-shadow: inset 0 0 1px 1px #000000;
-    z-index: 10000;
+    z-index: 999;
 }
 .promo_radio:checked + label::before{
     position: absolute;
@@ -1990,6 +1990,23 @@ main h2{
     -webkit-box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
     box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
 }
+@keyframes identifier {
+  0% {transform: translateY(-2000px);}
+  70% {transform: translateY(30px);}
+  100% {transform: translateY(0);}
+}
+.modal_show{
+  visibility: visible;
+  animation-name: identifier;
+  animation-duration: 1s;
+}
+.modal_login{
+    position: fixed;
+    left: 150px;
+    bottom: 40px;
+    z-index: 1000;
+    background: #ffffff;
+}
 .modal_login_form{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2129,18 +2146,19 @@ main h2{
     -o-transition: 0.4s;
     transition: 0.4s;
 }
-.modal_map{
-    position: relative;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+ .modal_map {
+    position: fixed;
+    bottom: 30px;
+    width: 960px;
+    right: 200px;
+    z-index: 10000;
     padding: 0;
     margin: 0 auto;
+    -webkit-box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+    box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
 }
+
 .modal_map .modal_close{
     top: 110px;
     left: 860px;
-}
-.modal_map img{
-    margin: 0;
-    padding: 0;
 }
