@@ -246,6 +246,9 @@ a{
     position: absolute;
     top: 13px;
 }
+.hidden_index_wrapper{
+  top: -10px;
+}
 .hidden{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -255,14 +258,32 @@ a{
     justify-content: space-between;
     width: 555px;
     margin-top: 53px;
+    background-color: #f8e296;
+}
+.hidden_index{
+  justify-content: flex-start;
+  width: 1100px;
+  margin-top: 66px;
+  margin-left: -20px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+.hidden_index .item_left{
+  margin-left: 7px;
+}
+.item_left_contr{
+  padding-bottom: 23px;
+}
+.hidden_index .item_left,
+.hidden_index .item_center{
+  margin-right: 18px;
 }
 .catalog_item:hover .hidden_wrapper, .catalog_item:focus .hidden_wrapper{
     display: block;
     z-index: 77;
 }
-.hidden{
-    background-color: #f8e296;
-}
+
 .inner_page .hidden_wrapper{
     position: absolute;
     width: 1160px;
@@ -360,7 +381,7 @@ a{
     top: 7px;
     background-image: url("../img/svg-device/search.svg");
 }
-.main_header img:hover, .main_header img :focus{
+.main_header img:hover , .main_header img:focus{
     opacity: 0.6;
 }
 .main_header img:active{
@@ -414,25 +435,25 @@ a{
 .promo_radio ~ label::before{
     position: absolute;
     content: "";
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     left: 904px;
     top: 197px;
     border-radius: 50%;
+    border: 1px solid #000000;
     background-color: #ffffff;
-    -webkit-box-shadow: inset 0 0 1px 1px #000000;
-            box-shadow: inset 0 0 1px 1px #000000;
     z-index: 999;
+    box-shadow: inset 0 0 0 2px #ffffff, inset 0 0 0 1px #000000;
 }
+
 .promo_radio:checked + label::before{
     position: absolute;
     content: "";
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
-    background-color: #000000;
-    -webkit-box-shadow: inset 0 0 1px 1px #000000, inset 0 0 1px 3px #ffffff;
-            box-shadow: inset 0 0 1px 1px #000000, inset 0 0 1px 3px #ffffff;
+    background-color: #ffffff;
+    box-shadow: inset 0 0 0 3px #ffffff, inset 0 0 0px 4px #000000;
 }
 .promo_radio ~.promo_1_indicator::before{
     left: 905px;
@@ -1280,8 +1301,7 @@ body > * > * > * > * {
 .about{
     padding: 0;
     width: 462px;
-    -ms-flex-negative: none;
-        flex-shrink: none;
+
 }
 .about h2{
     position: relative;
@@ -1915,7 +1935,6 @@ main h2{
     margin-bottom: 75px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding-right: px;
 }
 .catalog_pages > a{
     display: -webkit-box;
@@ -2002,10 +2021,16 @@ main h2{
 }
 .modal_login{
     position: fixed;
-    left: 150px;
-    bottom: 40px;
+    left: 50%;
+    bottom: 20px;
+    top: 50%;
+    margin-top: -277px;
+    margin-left: -480px;
+    width: 960px;
+    min-height: 554px;
     z-index: 1000;
     background: #ffffff;
+    box-sizing: border-box;
 }
 .modal_login_form{
     display: -webkit-box;
@@ -2146,19 +2171,22 @@ main h2{
     -o-transition: 0.4s;
     transition: 0.4s;
 }
- .modal_map {
+ .modal_map{
     position: fixed;
-    bottom: 30px;
+    top: 50%;
+    left: 50%;
+    margin-top: -279px;
+    margin-left: -460px;
     width: 960px;
-    right: 200px;
+    min-height: 559px;
     z-index: 10000;
     padding: 0;
-    margin: 0 auto;
     -webkit-box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
     box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
 }
 
 .modal_map .modal_close{
-    top: 110px;
+    position: absolute;
+    top: 30px;
     left: 860px;
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>HTML Academy: Девайс</title>
 </head>
 
@@ -41,13 +41,13 @@
                     <ul class="header_navigaton_bolt_literal">
                         <li class="catalog_item">
                             <a href="catalog.html">Каталог товаров</a>
-                            <div class="hidden_wrapper">
-                                <ul class="hidden">
+                            <div class="hidden_index_wrapper hidden_wrapper">
+                                <ul class=" hidden_index hidden">
                                     <li class="item_left">
                                         <ul class="item_left">
                                             <li class="item_left"><a href="#">Виртуальная реальность</a></li>
                                             <li class="item_left"><a href="catalog.html">Моноподы для селфи</a></li>
-                                            <li class="item_left"><a href="#">Экшн-камеры</a></li>
+                                            <li class="item_left_contr item_left"><a href="#">Экшн-камеры</a></li>
                                         </ul>
                                     </li>
                                     <li class="item_center">
@@ -285,11 +285,11 @@
             <div class="user_wrapper">
                 <p>
                     <label for="user_login">Имя Фамилия</label>
-                    <input id="user_login" type="text" placeholder="Имя Фамилия" name="login" class="login_name" pattern="[А-Яа-яЁё]">
+                    <input id="user_login" type="text" placeholder="Имя Фамилия" name="login" class="login_name">
                 </p>
                 <p>
                     <label for="user_password">Ваш e-mail</label>
-                    <input id="user_password" type="email" class="login_password" placeholder="email@example.com" pattern="[0-9]{,3}">
+                    <input id="user_password" type="email" class="login_password" placeholder="email@example.com">
                 </p>
                 <p>
                     <label for="message">Текст письма</label>
@@ -306,7 +306,7 @@
         <button type="button" class="modal_close modal_close_map"></button>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779985!2d37.527429315579646!3d55.6870309805358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1552596553344" width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
     </section>
-<script type="text/javascript" src="modal.js">
+<script type="text/javascript" src="compressed.js">
 
 </script>
 </body>

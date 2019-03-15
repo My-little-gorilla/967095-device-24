@@ -5,6 +5,8 @@ var login = document.querySelector("[name=login]");
 var map = document.querySelector(".map");
 var map_popup = document.querySelector(".modal_map");
 var close_map = document.querySelector(".modal_close_map");
+var form = document.querySelector(".modal_login_form");
+var email = document.querySelector("[type=email");
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -24,6 +26,7 @@ close_map.addEventListener("click", function (evt) {
   evt.preventDefault();
   map_popup.classList.remove("modal_show");
 });
+
 
 link.addEventListener("click", function () {
   console.log("click")});
