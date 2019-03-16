@@ -2022,7 +2022,6 @@ main h2{
 .modal_login{
     position: fixed;
     left: 50%;
-    bottom: 20px;
     top: 50%;
     margin-top: -277px;
     margin-left: -480px;
@@ -2103,13 +2102,13 @@ main h2{
     box-shadow: none;
 }
 .modal_close{
+    position: relative;
     border: none;
     background-color: #f0c52e;
     width: 55px;
     height: 55px;
     opacity: 0.5;
     border-radius: 50%;
-    position: relative;
     -ms-flex-item-align: end;
     align-self: flex-end;
 }
@@ -2145,7 +2144,7 @@ main h2{
 .line_button::after{
     content: "";
     position: absolute;
-    left: -16px;
+    left: -18px;
     top: 8px;
     z-index: -6;
     width: 160px;
@@ -2178,7 +2177,7 @@ main h2{
     margin-top: -279px;
     margin-left: -460px;
     width: 960px;
-    min-height: 559px;
+    height: 559px;
     z-index: 10000;
     padding: 0;
     -webkit-box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
