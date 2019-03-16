@@ -2184,6 +2184,10 @@ main h2{
     box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
 }
 
+.modal_map iframe{
+      border: none;
+}
+
 .modal_map .modal_close{
     position: absolute;
     top: 30px;
