@@ -1,32 +1,32 @@
 @font-face {
     font-family: "gilroylight";
     src: url("../fonts/gilroylight-webfont.woff2") format("woff2"), url("../fonts/gilroylight-webfont.woff") format("woff");
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: "gilroyextrabold";
     src: url("../fonts/gilroyextrabold-webfont.woff2") format("woff2"), url("../fonts/gilroyextrabold-webfont.woff") format("woff");
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: "open_sanslight";
     src: url("../fonts/opensans-light-webfont.woff2") format("woff2"), url("../fonts/opensans-light-webfont.woff") format("woff");
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: "open_sansregular";
     src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("/..fonts/opensans-regular-webfont.woff") format("woff");
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 body{
     background-color: #ffffff;
     font-family: "gilroyextrabold", Arial, sans-serif;
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 30px;
     letter-spacing: 0.15px;
     color: #000000;
@@ -143,8 +143,8 @@ a{
 .enter{
     margin-right: auto;
 }
-.enter span{
-    margin-left: 15px;
+.header_exit{
+  margin-right: 92px;
 }
 .enter a{
     position: relative;
@@ -250,35 +250,29 @@ a{
   top: -10px;
 }
 .hidden{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     width: 555px;
     margin-top: 53px;
     background-color: #f8e296;
 }
 .hidden_index{
-  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
   width: 1100px;
+  height: 130px;
   margin-top: 66px;
-  margin-left: -20px;
-  padding-left: 30px;
-  padding-bottom: 20px;
-  padding-right: 20px;
 }
-.hidden_index .item_left{
-  margin-left: 7px;
+.hidden_index li{
+  width: 200px;
 }
-.item_left_contr{
-  padding-bottom: 23px;
+.item_left a{
+  text-transform: none;
 }
-.hidden_index .item_left,
-.hidden_index .item_center{
-  margin-right: 18px;
+.hidden_index .item_right{
+  margin-bottom: 60px;
 }
+
 .catalog_item:hover .hidden_wrapper, .catalog_item:focus .hidden_wrapper{
     display: block;
     z-index: 77;
@@ -338,7 +332,7 @@ a{
     font-family: "open_sansregular", Arial, sans-serif;
     opacity: 0.3;
     color: #000000;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 30px;
     letter-spacing: 0.15px;
     -webkit-box-sizing: border-box;
@@ -495,7 +489,7 @@ a{
     left: -1px;
 }
 .slide_img3{
-    top:-60px;
+    top: -60px;
     left: -87px;
 }
 .slade_name{
@@ -613,7 +607,7 @@ a{
     color: #464646;
     font-family: "open_sansregular", Arial, sans-serif;
     font-size: 13px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 20px;
     letter-spacing: 0.13px;
     text-align: left;
@@ -650,7 +644,7 @@ a{
     color: #464646;
     font-family: "open_sansregular", Arial, sans-serif;
     font-size: 13px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 20px;
     letter-spacing: 0.13px;
     margin-top: 7px;
@@ -854,6 +848,7 @@ a{
 }
 .service_item_description h3{
     color: #000000;
+    font-family: "gilroyextrabold", Arial, sans-serif;
     font-size: 47px;
     font-weight: 400;
     line-height: 48px;
@@ -923,29 +918,19 @@ a{
     height: 100px;
     padding: 0;
 }
-.partners_item1 a{
-    background-image: url("../img/logo-1.png");
+.partners_link{
+    position: relative;
 }
-.partners_item1 a:hover, .partners_item1 a:focus{
-    background-image: url("../img/logo-1_copy.png");
+.partners_link img:last-child{
+  position: absolute;
+  top: 0px;
+  left: 0;
 }
-.partners_item2 a{
-    background-image: url("../img/logo-2.png");
+.colorful_logo{
+  display: none;
 }
-.partners_item2 a:hover, .partners_item2 a:focus{
-    background-image: url("../img/logo-2_copy.png");
-}
-.partners_item3 a{
-    background-image: url("../img/logo-3.png");
-}
-.partners_item3 a:hover, .partners_item3 a:focus{
-    background-image: url("../img/logo-3_copy.png");
-}
-.partners_item4{
-    background-image: url("../img/logo-4.png");
-}
-.partners_item4 a:hover, .partners_item4 a:focus{
-    background-image: url("../img/logo-4_copy.png");
+.partners_link:hover .colorful_logo{
+    display: block;
 }
 /* partners end */
 /* company_description */
@@ -1194,6 +1179,21 @@ body > * > * > * > * {
     width: 761px;
     margin-top: 145px;
 }
+.product_sort{
+  display: flex;
+  justify-content: space-between;
+}
+.sort_direction{
+  list-style: none;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 100px;
+  justify-content:  space-between;
+  margin-top: -114px;
+  margin-bottom: 108px;
+
+}
 .sort{
     display: -ms-flex;
     display: -webkit-box;
@@ -1206,11 +1206,11 @@ body > * > * > * > * {
     margin-bottom: 97px;
     position: relative;
 }
-.sort a{
+.product_sort a{
     color: #000000;
     opacity: 0.3;
 }
-.sort a:hover, .sort a:focus{
+.product_sort a:hover, .product_sort a:focus {
     opacity: 0.6;
 }
 .sort a:active{
@@ -1223,8 +1223,8 @@ body > * > * > * > * {
 .sort_direction_up a::after{
     position: absolute;
     content: "";
-    top: 6px;
-    left: 206px;
+    top: 0px;
+    left: 60px;
     width: 11px;
     height: 10px;
     background-image: url("../img/svg-device/icon-up-dir.svg");
@@ -1236,8 +1236,8 @@ body > * > * > * > * {
 .sort_direction_down a::after{
     position: absolute;
     content: "";
-    left: 167px;
-    top: 6px;
+    left: 21px;
+    top: 0px;
     width: 11px;
     height: 10px;
     background-image: url("../img/svg-device/icon-down-dir.svg");
@@ -1301,7 +1301,6 @@ body > * > * > * > * {
 .about{
     padding: 0;
     width: 462px;
-
 }
 .about h2{
     position: relative;
@@ -1316,15 +1315,18 @@ body > * > * > * > * {
     background-color: #000000;
 }
 .about .first_paragraph{
+    font-family: "open_sanslight" Arial, sans-serif;
     margin-bottom: 30px;
     padding: 0;
     white-space: normal;
     word-spacing: normal;
     letter-spacing: 0.18px;
 }
-.about p{
+.about .second_paragraph{
+    width: 460px;
     margin: 0;
     margin-bottom: 37px;
+    font-family: "open_sanslight" Arial, sans-serif;
     font-weight: 300;
     line-height: 30px;
     padding: 0;
@@ -1554,10 +1556,6 @@ footer p{
 .footer_navigation_small_literal li:last-child{
     margin-right: 12px;
 }
-.footer_navigation_small_literal li:nth-child(2){
-
-}
-
 .social_nav{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1683,9 +1681,6 @@ footer p{
   display: flex;
   justify-content: space-between;
 }
-.person_log svg{
-}
-
 .exit{
   opacity: 0.3;
   margin-left: -4px;
@@ -1704,7 +1699,7 @@ footer p{
     color: #000000;
     font-family: "open_sansregular", Arial, sans-serif;
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 36px;
     letter-spacing: 0.15px;
     text-transform: capitalize;
@@ -1723,7 +1718,7 @@ main h2{
     color: #000000;
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.14px;
 }
@@ -1785,7 +1780,7 @@ main h2{
     color: #000000;
     font-family: "open_sansregular", Arial, sans-serif;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 40px;
     letter-spacing: 0.10px;
 }
@@ -1806,6 +1801,10 @@ main h2{
 }
 .stick_discription span{
     padding-left: 15px;
+}
+.stick_discription a{
+  color: #000000;
+  cursor: pointer;
 }
 .product_items img{
     background-color: #eeeeee;
@@ -1875,7 +1874,7 @@ main h2{
     opacity: 0.5;
     color: #000000;
     font-size: 13px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 36px;
     letter-spacing: 0.13px;
     text-align: center;
@@ -2068,7 +2067,6 @@ main h2{
     padding-left: 20px;
     padding-bottom: 18px;
     background-color: #e5e5e5;
-   ;
     opacity: 0.5;
     border: none;
     font-family: "open_sansregular", Arial, sans-serif;
@@ -2123,7 +2121,7 @@ main h2{
     content: "";
     width: 23px;
     height: 22px;
-    background-image: url("../img/menu-close.svg_copy.png");
+    background-image: url("../img/svg-device/modal-close.svg");
     left: 16px;
     top: 16px;
 }
