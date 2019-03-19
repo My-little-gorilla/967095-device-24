@@ -34,7 +34,7 @@ body {
   line-height: 30px;
   letter-spacing: 0.15px;
   color: #000000;
-  min-width: 1200px;
+  /* min-width: 1200px; */
 }
 
 .inner_page{
@@ -1322,7 +1322,7 @@ fieldset {
   margin-bottom: 17px;
 }
 
-/* body>* {
+body>* {
   background-color: rgba(200, 0, 0, 0.3);
 }
 
@@ -1336,7 +1336,7 @@ body>*>*>* {
 
 body>*>*>*>* {
   background-color: rgba(0, 0, 255, 0.3);
-} */
+}
 
 .filter legend {
   color: #000000;
