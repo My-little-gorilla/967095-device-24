@@ -1323,7 +1323,7 @@ fieldset {
   margin-bottom: 17px;
 }
 
-/* body>* {
+body>* {
   background-color: rgba(200, 0, 0, 0.3);
 }
 
@@ -1337,7 +1337,7 @@ body>*>*>* {
 
 body>*>*>*>* {
   background-color: rgba(0, 0, 255, 0.3);
-} */
+}
 
 .filter legend {
   color: #000000;
@@ -1741,8 +1741,11 @@ body>*>*>*>* {
 /* footer */
 footer {
   background-color: #464646;
+  background-repeat: repeat-y;
+  height: 100%;;
   color: #ffffff;
-  padding-bottom: 40px;
+  border-bottom: 2px solid black;
+  /* padding-bottom: 40px; */
 }
 
 footer a {
@@ -2494,7 +2497,7 @@ main h2 {
 .modal_close {
   position: relative;
   border: none;
-  background-color: #f0c52e;
+  background: url("../img/svg-device/modal-close.svg");
   width: 55px;
   height: 55px;
   opacity: 0.5;
@@ -2510,17 +2513,6 @@ main h2 {
 .modal_close:active {
   opacity: 0.6;
 }
-
-.modal_close::before {
-  position: absolute;
-  content: "";
-  width: 23px;
-  height: 22px;
-  background-image: url("../img/svg-device/modal-close.svg");
-  left: 16px;
-  top: 16px;
-}
-
 .line_button {
   border: none;
   background-color: transparent;
