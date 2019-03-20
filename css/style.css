@@ -1323,7 +1323,7 @@ fieldset {
   margin-bottom: 17px;
 }
 
-body>* {
+/* body>* {
   background-color: rgba(200, 0, 0, 0.3);
 }
 
@@ -1337,7 +1337,7 @@ body>*>*>* {
 
 body>*>*>*>* {
   background-color: rgba(0, 0, 255, 0.3);
-}
+} */
 
 .filter legend {
   color: #000000;
@@ -1744,7 +1744,6 @@ footer {
   background-repeat: repeat-y;
   height: 100%;;
   color: #ffffff;
-  border-bottom: 2px solid black;
   /* padding-bottom: 40px; */
 }
 
@@ -2064,6 +2063,8 @@ main h2 {
 }
 
 .catalog_line {
+  position: relative;
+  left: 0;
   display: block;
   width: 201px;
   height: 2px;
@@ -2583,4 +2584,22 @@ main h2 {
   position: absolute;
   top: 30px;
   left: 860px;
+}
+
+
+
+/* доп.фикс.полоса в IE */
+.wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+html body {
+  height: 100%;
+}
+footer {
+  flex: 0 0 auto;
+}
+.footer_wrapper{
+  flex: 1 0 auto;
 }
