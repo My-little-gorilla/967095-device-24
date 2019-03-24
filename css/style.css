@@ -1139,6 +1139,7 @@ a {
 .width2 {
   width: 500px;
   margin-right: auto;
+  margin-top: -27px;
 }
 
 .filter, .produrt {
@@ -1228,7 +1229,7 @@ a {
 
 .from_button, .till_button {
   position: relative;
-  top: 26px;
+  top: 16px;
   left: -25px;
   width: 54px;
   height: 12px;
@@ -1514,7 +1515,8 @@ body>*>*>*>* {
 }
 
 .product_items li {
-  margin-bottom: 26px;
+  position: relative;
+  margin-bottom: 12px;
 }
 
 .product_items p:first-child {
@@ -2063,7 +2065,7 @@ main h2 {
   height: 2px;
   border: 0;
   background: #000000;
-  margin-top: 57px;
+  margin-top: 47px;
   margin-bottom: 9px;
 }
 
@@ -2101,7 +2103,7 @@ main h2 {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.18px;
-  margin-bottom: 17px;
+  margin-bottom: 27px;
   margin-top: 0px;
 }
 
@@ -2124,12 +2126,8 @@ main h2 {
   background-color: #eeeeee;
 }
 
-.product_items li {
-  position: relative;
-}
-
-.common_link {
-  margin-top: -17px;
+.common_link p{
+  margin-top: 0;
 }
 
 .common_link .new {
@@ -2287,7 +2285,7 @@ main h2 {
   -ms-flex-align: center;
   align-items: center;
   background-color: #ebebeb;
-  margin-top: -27px;
+  margin-top: -13px;
   margin-bottom: 75px;
   margin-left: -10px;
   -webkit-box-sizing: border-box;
