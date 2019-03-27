@@ -8,7 +8,7 @@
 @font-face {
   font-family: "gilroy";
   src: url("../fonts/gilroyextrabold-webfont.woff2") format("woff2"), url("../fonts/gilroyextrabold-webfont.woff") format("woff");
-  font-weight: 400;
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -30,7 +30,7 @@ body {
   background-color: #ffffff;
   font-family: "gilroy", Arial, sans-serif;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 30px;
   letter-spacing: 0.15px;
   color: #000000;
@@ -480,7 +480,7 @@ a {
 .header_navigaton_bolt_literal a, .header_navigaton_catalog a {
   font-family: "gilroy", Arial, sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 3.6px;
@@ -597,8 +597,9 @@ a {
 .slade_name {
   line-height: 56px;
   color: #000000;
+  font-family: "gilroy", Arial, sans-serif;
   font-size: 47px;
-  font-weight: 400;
+  font-weight: 800;
   letter-spacing: 0.60px;
   padding: 0;
 }
@@ -658,7 +659,7 @@ a {
   color: #ffffff;
   font-family: "gilroy", Arial, sans-serif;
   font-size: 179px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 179.2px;
   letter-spacing: 0.36px;
 }
@@ -667,6 +668,7 @@ a {
   top: 51px;
   left: 18px;
   letter-spacing: 3.80px;
+  font-weight: 800;
 }
 
 .promo_description .detail::after {
@@ -801,7 +803,7 @@ a {
   color: #000000;
   font-family: "gilroy", Arial, sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   letter-spacing: 0.20px;
 }
@@ -833,9 +835,7 @@ a {
 
 .popular_list_item6 svg {
   transform: translateY(3px) translateX(1px);
-}
-
-/* popular_end */
+}/* popular_end */
 /* service */
 .service {
   width: 100%;
@@ -852,7 +852,6 @@ a {
 .service label {
   position: absolute;
   letter-spacing: 4.12px;
-  display: inline-block;
   padding-right: 260px;
   padding-left: 18px;
   padding-top: 9px;
@@ -975,7 +974,7 @@ a {
   color: #000000;
   font-family: "gilroy", Arial, sans-serif;
   font-size: 47px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 48px;
   letter-spacing: 0.90px;
   margin-bottom: 29px;
@@ -1252,7 +1251,7 @@ a {
   color: #000000;
   font-family: "gilroy", Arial, sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 3.5px;
@@ -1336,7 +1335,7 @@ body>*>*>*>* {
   color: #000000;
   font-family: "gilroy", Arial, sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   letter-spacing: 0.18px;
   margin-bottom: 17px;
@@ -1380,7 +1379,7 @@ body>*>*>*>* {
   top: -2px;
   padding: 0;
   letter-spacing: 3.4px;
-  font-weight: 400;
+  font-weight: 800;
 }
 
 .filter_options .detail::after {
@@ -1476,7 +1475,7 @@ body>*>*>*>* {
   color: #000000;
   font-family: "gilroy", Arial, sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 3.70px;
@@ -1611,7 +1610,7 @@ body>*>*>*>* {
   color: #000000;
   font-family: "gilroy", Arial, sans-serif;
   font-size: 47px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 48px;
   letter-spacing: 0.21px;
 }
@@ -1632,7 +1631,7 @@ body>*>*>*>* {
 .transport_company {
   color: #000000;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 40px;
   padding: 0;
   margin: 0;
@@ -1660,7 +1659,7 @@ body>*>*>*>* {
 .yellow {
   font-family: "gilroy", Arial, sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
   width: 178px;
@@ -1676,7 +1675,7 @@ body>*>*>*>* {
   width: 230px;
   color: #000000;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 2.15px;
@@ -1705,7 +1704,7 @@ body>*>*>*>* {
   width: 220px;
   color: #000000;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 2.15px;
@@ -1859,7 +1858,7 @@ footer p {
 .navigation_items a {
   font-family: "gilroy", Arial, sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 3.6px;
@@ -2020,7 +2019,7 @@ footer p {
 main h2 {
   color: #000000;
   font-size: 47px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 48px;
   letter-spacing: 0.17px;
 }
@@ -2051,7 +2050,7 @@ main h2 {
   color: #000000;
   font-family: "gilroy", Arial, sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2.15px;
   background-color: transparent;
@@ -2100,7 +2099,7 @@ main h2 {
   color: #000000;
   font-family: "gilroy", Arial, sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   letter-spacing: 0.18px;
   margin-bottom: 27px;
@@ -2111,6 +2110,9 @@ main h2 {
 .product_items {
   list-style: none;
   margin-top: -7px;
+}
+.pro_stick {
+  max-width: 182px;
 }
 
 .stick_discription span {
@@ -2145,7 +2147,7 @@ main h2 {
   color: #000000;
   font-family: "gilroy", Arial, sans-serif;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 0.25px;
@@ -2257,7 +2259,7 @@ main h2 {
   color: #000000;
   font-family: "gilroy", Arial, sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   letter-spacing: 0.19px;
   margin-left: -2px;
@@ -2306,7 +2308,7 @@ main h2 {
   color: #000000;
   font-family: "gilroy", Arial, sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 4.0px;
@@ -2342,7 +2344,7 @@ main h2 {
   color: #000000;
   font-family: "gilroy", Arial, sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
   opacity: 0.3;
@@ -2514,7 +2516,7 @@ main h2 {
   width: 130px;
   color: #000000;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 2.15px;
